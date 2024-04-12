@@ -5,7 +5,8 @@ function generateTodaysDate() {
 			if (data.result === true) {
 				document.querySelector("#date").textContent = data.today;
 			}
-		});
+		})
+		.catch((e) => console.error(e));
 }
 
 generateTodaysDate();
